@@ -1,5 +1,5 @@
 
-let usuariosBases = [{ nombre: "Ash Ketchum", pass: "", email: "" },
+let usuariosBases = [{ nombre: "Ash Ketchum", pass: "pikachu123", email: "" },
 { nombre: "Misty", pass: "togepi123", email: "" }];
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || usuariosBases;
 // Referencias a los elementos del formulario
@@ -120,6 +120,10 @@ function actualizarNavbar() {
             <li><a href="#">Cart</a></li>
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" high="50px" width="50px" aria-expanded="false">
             <img src="images/menuPokeShopImages/lucas.png" hight="50px">${usuario}</a>
+            <il class="dropdown-menu" style="background-color: #2c3e50;">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            </il class="dropdown-menu">
             <li><a href="#" onclick="logout()">Cerrar sesión</a></li>
         </ul>
         <il id="authLinks"></il>
